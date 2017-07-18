@@ -1,0 +1,34 @@
+@mixin rowSize($size, $width)
+{
+	height: $size;
+	width: $width;
+	background-color: black; //dummy
+}
+
+@mixin blueSquare
+// For the dark grey squares in the first blue square.
+{
+	position: absolute;
+	top: $--top;
+}
+
+@mixin boxSize($size)
+{
+	height: $size;
+	width: $size;
+}
+
+@mixin e($element)
+{
+	&__#{$element}
+	{
+		@content;
+	}
+}
+@mixin m($modifier)
+{
+	&--#{$modifier}
+	{
+		@content;
+	}
+}

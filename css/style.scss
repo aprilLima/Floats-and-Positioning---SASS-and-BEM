@@ -1,0 +1,74 @@
+// Import statements
+@import 'variables';
+
+
+body
+{
+	background-color: #fff;
+
+	.container
+	{
+		width: $--width;
+		height: $--height;
+		margin: 50px auto 0px auto; 
+		//Centers the container, with some margin top.
+		background-color: $--grey-dark; //dummy
+
+		.__first
+		{
+			.box--medium
+			{
+				float: left;
+			} //__first
+			.box--medium--half
+			{
+				float: left;
+			}
+		} //__first
+
+		.__second
+		{
+			.box--long
+			{
+				float: left;
+
+				.box--xsmall
+				{
+					float: left;
+				}
+			} //.box--long
+		} //__second
+
+		.__third
+		{
+			.box--medium
+			{
+				float: left;
+			} //box--medium
+			.box--wide
+			{
+				float: left;
+			} //box--wide
+		} //__third
+
+		.__fourth
+		{
+			.box--medium
+			{
+				float: left;
+			} //box--medium
+			.box--wide
+			{
+				float: left;
+			} //box--wide
+		} //__fourth
+
+		.__fifth
+		{
+			.box--long
+			{
+				float: left;
+			} //.box--long
+		} //__fifth
+	} //container
+} //body

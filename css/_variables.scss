@@ -1,0 +1,160 @@
+// Import statements
+@import 'colors';
+@import 'sizes';
+@import 'mixins';
+
+
+
+
+//The small squares for corners. 
+.--topLeft
+{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+.--topRight
+{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+.--bottomLeft
+{
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+}
+.--bottomRight
+{
+	position: absolute; 
+	bottom: 0px;
+	right: 0px;
+}
+
+
+// For specific squares.
+.__lightGreyMiddle
+{
+	@include blueSquare;
+	left:  $--top;
+}
+.__leftBlueSquare--leftSquare
+{
+	@include blueSquare;
+	left: $--xsmall;
+}
+.__leftBlueSquare--rightSquare
+{
+	@include blueSquare;
+	right: 0px;
+}
+.__rightBlueSquare--leftSquare
+{
+	@include blueSquare;
+	left: 0px;
+}
+.__rightBlueSquare--rightSquare
+{
+	@include blueSquare; 
+	right: $--xsmall;
+}
+
+
+
+//For the 5 "rows" in the image.
+.row--xsmall
+{
+	@include rowSize($row--xsmall, $--width);
+}
+.row--small
+{
+	@include rowSize($row--small, $--width);
+}
+.row--medium
+{
+	@include rowSize($row--medium, $--width);
+}
+
+
+
+// Box dimensions
+.box--xsmall
+{
+	@include boxSize($--xsmall);
+}
+.box--small
+{
+	@include boxSize($--small);
+}
+.box--medium
+{
+	@include boxSize($--medium);
+}
+.box--long
+{
+	height: $--small;
+	width: $--medium;
+}
+.box--long--half
+{
+	height: $--xsmall;
+	width: $--medium;
+}
+.box--wide
+{
+	height: $--medium;
+	width: $--large;
+}
+.box--wide--half
+{
+	height: $--medium;
+	width: $--large / 2;
+}
+.box--wide--strip
+{
+	height: $--xsmall;
+	width: $--large;
+}
+.box--medium--half
+{
+	height: $--medium;
+	width: $--small;
+}
+
+
+
+
+
+//misc modifiers
+.--right
+{
+	float: right;
+}
+.--left {
+	float: left;
+}
+.--relative
+{
+	position: relative;
+}
+.--absolute
+{
+	position: absolute;
+}
+
+
+
+//Color variable names
+.--blue { background-color: $--blue; }
+.--grey-dark { background-color: $--grey-dark; }
+.--grey-light{ background-color: $--grey-light; }
+.--yellow{ background-color:  $--yellow; }
+.--red{ background-color: $--red; }
+.--teal{ background-color: $--teal; }
+.--orange{ background-color: $--orange; }
+.--purple{ background-color: $--purple; }
+.--violet{ background-color: $--violet; }
+.--green-dark{ background-color: $--green-dark; }
+.--green-light{ background-color: $--green-light; }
+.--white { background-color: white;}
