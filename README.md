@@ -1,6 +1,7 @@
-# Floats-and-Positioning---SASS-and-BEM
+# Floats-and-Positioning -- SASS and BEM edition!
 Original challenge issued by <a href="https://github.com/csun-metalab/awesome-metalab" target="blank">META+LAB</a> to be done before being considered into their summer internship program in 2017. 
 Original challenge was required plain HTML and CSS. 
+
 I re-explored this challenge on my own time to practice implementing SASS and practice the BEM naming conventions. 
 
 ## Objective
